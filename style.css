@@ -1,0 +1,143 @@
+body{
+	font-family: sans-serif, serif;
+    color: darkred;
+    text-align: center;
+}
+/* Default text set to Ariel with Times Roman as backup.
+Default text colour set to Dark Red matching Header Image.
+All text set to align centre. */
+
+header{
+    background-image: url("switzerland-zermatt-mountains-snow.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: floralwhite;
+    padding: 0 20px;
+}
+/* https://www.pexels.com/photo/snow-landscape-mountains-sky-35178/ 
+Background Image will match browser size.
+Centre focus on Background Image.
+Background Image appear according to the flexbox model.
+Only item in Header, the Button will appear centre with border.
+Text in Header colour set to Floral White.
+Padding set to 0px 20px 0px 20px. */
+
+header h1{
+    font-size: 50px;
+    line-height: 1.2;
+    }
+/* Header H1 text set to 50px.
+Gap between H1 text set to 1.2(unitless). */
+
+header p{
+    font-size: 20px;
+}
+/* Header Paragraph text set to 20px. */
+
+header .button{
+    font-size: 18px;
+    text-decoration: none;
+    color: floralwhite;
+    border: floralwhite 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px
+}
+/* Button Text set to 18px.
+Underline removed from Text.
+Text colour set to Floral White.
+Button Border colour set to Floral White.
+Button Padding set to 10px 20px 10px 20px.
+Rounded corner added to Button.
+Margin added to Button at 20px. */
+
+header .button:hover{
+    background: darkred;
+}
+/* Button colour change to Dark Red once pointer hoover. */
+
+container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+}
+/*CSS Grid Layout used over Flexbox Layout.
+Layout set to two Grid Columns at 1fr.
+Rows will auto size from 50px to Browser length. */
+
+container p{
+    padding: 0px 10px;
+}
+/* Container Paragraph text padding set to 0px 10px 0px 10px. */
+
+
+img{
+    padding: 20px;
+}
+/* Padding added to Social Icon. */
+
+img:hover{
+    opacity: 0.7;
+}
+/* Icon will fade when pointer over. */
+
+skills{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+objective{
+    grid-column: 2;
+    grid-row: 1/4;
+    background: firebrick;
+    color: floralwhite;
+}
+
+experience{
+    grid-column: 1;
+    grid-row: 3/5;
+    background: floralwhite;
+    border-top: darkred 1px solid;
+    border-left: darkred 1px solid;
+    border-right: darkred 1px solid;
+}
+
+links{
+    grid-column: 2;
+}
+
+education{
+    grid-column: 1;
+    grid-row: 5/7;
+    background: floralwhite;
+    border-bottom: darkred 1px solid;
+    border-left: darkred 1px solid;
+    border-right: darkred 1px solid;
+}
+
+other{
+    grid-column: 2;
+    grid-row: 6;
+    background: floralwhite;
+    border-top: darkred 1px solid;
+    border-right: darkred 1px solid;
+    border-bottom: darkred 1px solid;
+}
+
+footer{
+    text-align: center;
+    color: floralwhite;
+    background: firebrick;
+    border-bottom: darkred 1px solid;
+    padding: 10px;
+}
+/* https://www.pexels.com/photo/snow-landscape-mountains-sky-35178/ 
+Background Image will match browser size.
+Centre focus on Background Image.
+Background Image appear according to the flexbox model.
+Only item in Header, the Button will appear centre with border.
+Text in Header colour set to Floral White.
+Padding set to 0px 20px 0px 20px. */
