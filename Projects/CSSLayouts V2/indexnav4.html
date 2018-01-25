@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning CSS Layouts</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Learning CSS Layouts</h1>
+    </header>
+<content>
+<nav>
+    <a>Box Models:</a>
+    <ul>
+        <li><a href="indexnav1.html">Width</a></li>
+        <li><a href="indexnav2.html">Height</a></li>
+        <li><a href="indexnav3.html">Padding</a></li>
+        <li><a href="indexnav4.html">Margain</a></li> 
+    </ul>
+</nav>
+<section>
+    <article>
+        <h4>Margain Box Model</h4>
+        <p>The margin CSS property de nes an outside space on one, two, three or all four sides of an element, and it looks like this:
+        margin: 10px;
+        Alternatively, it could also look like this:
+        margin: 10px 15px;</p>
+        <p>The margin property is the shorthand for margin-top, margin-right, margin- bottom, and margin-left. Just like with padding, we can use one, two, three, or all four values.</p>
+        <ul>
+        <li>One value: This means that all four sides have the same padding.</li>
+        <li>Two values: The first value is for Top and Bottom. The second value is for
+        Left and Right.</li>
+        <li>Three values: The first value is for Top. The second value is for Left and Right. The third value is for Bottom.</li>
+        <li>Four values: The first value is for Top. The second is for Right. The third is for Bottom. The fourth value is for Left.</li>
+        </ul>
+        Negative values are allowed.
+     </article>
+<pre>
+<b>CSS:</b><br>
+        /*Shorthand, ONE value: all four sides have the same padding*/
+        .element { margin: 10px; }
+        /*Shorthand, TWO values: Top & Bottom - Left & Right*/
+        .element { margin: 10px 15px; }
+        /*Shorthand, THREE values: Top - Left & Right - Bottom*/
+        .element { margin: 10px 15px 20px; }
+        /*Shorthand, FOUR values: Top - Right - Bottom - Left*/
+        .element { margin: 10px 15px 20px 25px; }
+        /*Longhand, all values. They 1can go in any order*/
+        .element {
+         margin-top: 10px;
+         margin-right: 15px;
+         margin-bottom: 20px;
+         margin-left: 25px;
+        }
+</pre>
+</section>
+</content>
+    <footer>
+        <p>Copyright &copy; 2018, SharifCoding</p>
+    </footer>
+</body>
+</html>

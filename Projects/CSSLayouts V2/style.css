@@ -1,0 +1,88 @@
+body{
+    background-color: cornflowerblue;
+    font-family: sans-serif, serif;
+}
+/* Background colour set to baby blue.
+Font set to Ariel, Times Roman as backup. */
+
+header{
+    background-color:cadetblue;
+    color: darkslateblue;
+    text-align: center;
+    padding: 8px;
+    border-bottom-style: solid;
+    border-right-style:solid;
+}
+/* Background colour set to green blue.
+Font Colour set to dark blue.
+All text within header align to centre.
+Padding set to 8px. 
+Solid border style added to bottom and right. */
+
+content{
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Background colour set to baby blue.
+Everything within content appear evenly centred */
+
+section{
+    width:70%;
+    float: right;
+}
+/* Section will appear with 70% usage from Content.
+Section float on right side of Content section. */
+
+article{
+}
+
+pre{
+    margin-bottom:20px;
+}
+/* Margin added to ottom only */
+
+nav{
+    width:30%;
+    float:left;
+    margin-top:22px;
+}
+/* Nav will appear with 30% usage from Content.
+Section float on left side of Content section.
+Margain of 22px on top to line with Arcticle section. */
+
+nav ul {
+/*    list-style-type: none;
+    padding: 0; */
+}
+/* Bullet points removed from list.
+Adding padding 0 remove indent. */
+
+nav li a {
+    color: darkslateblue;
+    font-size: 14px;
+    text-decoration-line: none;
+}
+/* List text set to default white colour.
+Remove list text underline. */
+
+nav li a:hover,nav li a.current {
+    color: #000000;
+}
+/* List text will appear black once hover */
+
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    color: darkslateblue;
+    padding: 1px;
+    border-bottom-style: solid;
+    border-right-style:solid;
+    clear:both;
+}
+/* Background colour set to green blue.
+All text within footer align to centre.
+Font Colour set to dark blue.
+Padding set to 1px.
+Solid border style added to bottom and right. 
+Footer will appear clear from float layout.*/

@@ -59,9 +59,23 @@ header .button:hover{
 }
 /* Button colour change to Dark Red once pointer hoover. */
 
+ul{
+    padding-bottom: 15px;
+}
+/*Padding applied to unordered list. */
+
+li{
+    display: inline;
+    margin-right: 40px;
+    color: darkred;
+}
+/*Lists appears horizontal.
+Margin between each Lists. */
+
 container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-area: auto;
     grid-auto-rows: minmax(50px, auto);
 }
 /*CSS Grid Layout used over Flexbox Layout.
