@@ -2,13 +2,18 @@ body{
 	font-family: sans-serif, serif;
     color: darkred;
     text-align: center;
+    min-width:600px;
+    width: auto !important;
+    width:600px;
 }
 /* Default text set to Ariel with Times Roman as backup.
 Default text colour set to Dark Red matching Header Image.
-All text set to align centre. */
-
+All text set to align centre. 
+Minimum width set to 600px.
+Firefox will set width as auto.
+IE6 ignores !important, set width to 600px. */
 header{
-    background-image: url("switzerland-zermatt-mountains-snow.jpg");
+    background-image: url("img/switzerland-zermatt-mountains-snow.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -37,6 +42,17 @@ header p{
 }
 /* Header Paragraph text set to 20px. */
 
+header ul{
+    padding-bottom: 15px;
+
+}
+/* Padding applied to unordered list. */
+
+header a{
+    color: floralwhite;
+}
+/* Header Link text colour set to white. */
+
 header .button{
     font-size: 18px;
     text-decoration: none;
@@ -59,17 +75,33 @@ header .button:hover{
 }
 /* Button colour change to Dark Red once pointer hoover. */
 
+project h1{
+    color: darkred;
+    background-color: white;
+    padding: 20px 16px; }
+
 ul{
     padding-bottom: 15px;
 }
-/*Padding applied to unordered list. */
+/* Padding applied to unordered list. */
 
-li{
+li {
     display: inline;
     margin-right: 40px;
     color: darkred;
+    font-size: 20px;
 }
-/*Lists appears horizontal.
+
+li a {
+    color: darkred;
+    text-decoration: none;
+    padding: 20px;
+}
+li a:hover {
+    background-color: darkred;
+    color: white;
+}
+/* Lists appears horizontal.
 Margin between each Lists. */
 
 container{
@@ -78,7 +110,7 @@ container{
     grid-area: auto;
     grid-auto-rows: minmax(50px, auto);
 }
-/*CSS Grid Layout used over Flexbox Layout.
+/* CSS Grid Layout used over Flexbox Layout.
 Layout set to two Grid Columns at 1fr.
 Rows will auto size from 50px to Browser length. */
 
@@ -148,10 +180,3 @@ footer{
     border-bottom: darkred 1px solid;
     padding: 10px;
 }
-/* https://www.pexels.com/photo/snow-landscape-mountains-sky-35178/ 
-Background Image will match browser size.
-Centre focus on Background Image.
-Background Image appear according to the flexbox model.
-Only item in Header, the Button will appear centre with border.
-Text in Header colour set to Floral White.
-Padding set to 0px 20px 0px 20px. */
