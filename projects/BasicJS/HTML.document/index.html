@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- standard characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport meta tag -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- compatible with previous IE -->
+    <!-- <link rel="stylesheet" href="main.css" type="text/css"> -->
+    <title>Basic HTML/CSS Design</title>
+</head>
+<body>
+    <header>
+        <h1>Manchester Morning News</h1>
+        <nav>
+            <ul>
+                <li><a onmouseover="mouseOver(this);" onmouseout="mouseOut(this);" class="active" href="index.html">Home</a></li>
+                <li><a onmouseover="mouseOver(this);" onmouseout="mouseOut(this);" href="index.html">News</a></li>
+                <li><a onmouseover="mouseOver(this);" onmouseout="mouseOut(this);" href="index.html">Weather</a></li>
+                <li><a onmouseover="mouseOver(this);" onmouseout="mouseOut(this);" href="index.html">Classifieds</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Manchester is the real tech capital of the UK</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, illum qui possimus totam consequatur ipsam tempora vel cum reiciendis ab sunt ex, provident alias sequi repellendus iste, quia ea laboriosam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, illum qui possimus totam consequatur ipsam tempora vel cum reiciendis ab sunt ex, provident alias sequi repellendus iste, quia ea laboriosam.</p>
+            <figure>
+                <img src="ManchesterDigitalCity.jpg" alt="Manchester Digital City">
+                <figcaption>Manchester Digital City</figcaption>
+            </figure>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, illum qui possimus totam consequatur ipsam tempora vel cum reiciendis ab sunt ex, provident alias sequi repellendus iste, quia ea laboriosam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, illum qui possimus totam consequatur ipsam tempora vel cum reiciendis ab sunt ex, provident alias sequi repellendus iste, quia ea laboriosam.</p>
+        </article>
+        <aside>
+            <h3>Author</h3>
+            <img src="HomerSimpson.jpg" alt="Homer Simpson">
+            <h4>Homer Simpsons</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, esse deserunt eos aperiam officiis architecto sint nihil? Molestias delectus modi vero inventore, sapiente dolor deleniti reiciendis eum enim, suscipit non?</p>
+        </aside>
+    </main>
+    <footer>
+        &copy; Manchester Morning News
+    </footer>
+    <script src="main.js"></script>
+    <script>
+        var newMain = document.querySelector('main');
+        newMain.style.display = 'flex';
+        newMain.style.flexDirection = 'row';
+        newMain.style.backgroundColor = 'lightslategray';
+        newMain.style.padding = '20px';
+
+        var newArticle = document.querySelector('article');
+        newArticle.style.width = '66.6%';
+        newArticle.style.paddingRight = '30px';
+
+        var newAside = document.querySelector('aside');
+        newAside.style.width = '33.3%';
+        var newAsideImg = document.querySelector('aside img');
+        newAsideImg.style.maxWidth = '100%';
+        newAsideImg.style.maxHeight = '100%';
+    </script>
+</body>
+</html>
