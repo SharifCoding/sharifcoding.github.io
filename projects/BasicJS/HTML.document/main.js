@@ -6,7 +6,7 @@ console.log(document.title);
 body {
   font-family: Arial, Helvetica, sans-serif; }
 */
-var newBody = document.querySelector('body');
+const newBody = document.querySelector('body');
 newBody.style.fontFamily = 'Arial, Helvetica, sans-serif';
 newBody.style.backgroundColor = '#FFBB22';
 
@@ -17,7 +17,7 @@ header {
   background-color: #333;
   padding: 0px 16px; }
 */
-var newHeader = document.querySelector('header');
+const newHeader = document.querySelector('header');
 newHeader.style.fontSize = '36px';
 newHeader.style.color = 'white';
 newHeader.style.backgroundColor = '#333';
@@ -31,7 +31,7 @@ ul {
   overflow: hidden;
   background-color: #333; }
 */
-var newUl = document.querySelector('nav ul');
+const newUl = document.querySelector('nav ul');
 console.log(newUl);
 newUl.style.listStyleType = 'none';
 newUl.style.margin = '0px';
@@ -51,30 +51,30 @@ li {
     li a:hover {
       background-color: #111; }
 */
-var links = document.querySelectorAll('a');
+const links = document.querySelectorAll('a');
 console.log(document);
-for(var i = 0; i < links.length; i++){
-links[i].style.float = 'left';
-links[i].style.float = 'left';
-links[i].style.display = 'block';
-links[i].style.color = 'white';
-links[i].style.textAlign = 'left';
-links[i].style.padding = '14px 16px';
-links[i].style.textDecoration = 'none';
+for (let i = 0; i < links.length; i++) {
+  links[i].style.float = 'left';
+  links[i].style.float = 'left';
+  links[i].style.display = 'block';
+  links[i].style.color = 'white';
+  links[i].style.textAlign = 'left';
+  links[i].style.padding = '14px 16px';
+  links[i].style.textDecoration = 'none';
 }
 function mouseOver(doc) {
-    doc.style.backgroundColor = '#111';
+  doc.style.backgroundColor = '#111';
 }
 function mouseOut(doc) {
-    doc.style.backgroundColor = '#333';
-    newActive.style.backgroundColor = '#4CAF50';
+  doc.style.backgroundColor = '#333';
+  newActive.style.backgroundColor = '#4CAF50';
 }
 
 /*
 .active {
     background-color: #4CAF50; }
 */
-var newActive = document.querySelector('.active');
+const newActive = document.querySelector('.active');
 newActive.style.backgroundColor = '#4CAF50';
 
 /*
@@ -82,7 +82,7 @@ figure > img {
   max-width: 100%;
   max-height: 100%; }
 */
-var newFigureImg = document.querySelector('figure img');
+const newFigureImg = document.querySelector('figure img');
 newFigureImg.style.maxWidth = '100%';
 newFigureImg.style.maxHeight = '100%';
 
@@ -93,7 +93,7 @@ footer {
   background-color: #333;
   padding: 0px 16px; }
 */
-var newFooter = document.querySelector('footer');
+const newFooter = document.querySelector('footer');
 newFooter.style.fontSize = '36px';
 newFooter.style.color = 'white';
 newFooter.style.backgroundColor = '#333';

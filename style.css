@@ -75,29 +75,39 @@ header .button:hover{
 }
 /* Button colour change to Dark Red once pointer hoover. */
 
-project h1{
+course h2{
     color: darkred;
     background-color: white;
-    padding: 20px 16px; }
+    padding: 20px 16px;
+}
 
-ul{
+course img{
+    padding: 0px 10px;
+}
+
+project h2{
+    color: darkred;
+    padding: 20px 16px;
+}
+
+project ul{
     padding-bottom: 15px;
 }
 /* Padding applied to unordered list. */
 
-li {
+project li {
     display: inline;
     margin-right: 40px;
     color: darkred;
     font-size: 20px;
 }
 
-li a {
+project li a {
     color: darkred;
     text-decoration: none;
     padding: 20px;
 }
-li a:hover {
+project li a:hover {
     background-color: darkred;
     color: white;
 }
@@ -120,12 +130,12 @@ container p{
 /* Container Paragraph text padding set to 0px 10px 0px 10px. */
 
 
-img{
+links img{
     padding: 20px;
 }
 /* Padding added to Social Icon. */
 
-img:hover{
+links img:hover{
     opacity: 0.7;
 }
 /* Icon will fade when pointer over. */
