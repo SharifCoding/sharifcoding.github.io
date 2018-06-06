@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- standard characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport meta tag -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- compatible with previous IE -->
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>My First Website</title>
+    <style>
+        contact {
+            display: flex;
+            flex-direction: row;
+            background-color: lightslategray;
+            padding: 20px;
+            flex-wrap: wrap; }
+        input, textarea {
+            width: 100%; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <contact>
+        <form action="/action_page.php">
+            First name:<br>
+            <input type="text" name="firstname" placeholder="first name"><br>
+            Last name:<br>
+            <input type="text" name="lastname" placeholder="last name"><br>
+            Email:<br>
+            <input type="email" name="email" placeholder="email address"><br>
+            Comments:<br>
+            <textarea name="message" rows="5" cols="30">
+            </textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </contact>
+    <footer>
+        &copy; Manchester Morning News
+    </footer>
+</body>
+</html>

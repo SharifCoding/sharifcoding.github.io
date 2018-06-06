@@ -28,53 +28,8 @@ li {
 .active {
   background-color: #4CAF50; }
 
-main {
-  display: flex;
-  flex-direction: row;
-  background-color: lightslategray;
-  padding: 20px; }
-
-article {
-  width: 66.6%;
-  padding-right: 30px; }
-
-aside {
-  width: 33.3%; }
-  aside > img {
-    max-width: 100%;
-    max-height: 100%; }
-
-figure > img {
-  max-width: 100%;
-  max-height: 100%; }
-
-mainnews {
-  display: flex;
-  flex-direction: row;
-  background-color: lightslategray;
-  padding: 20px;
-  flex-wrap: wrap; }
-
-news {
-  width: 50%; }
-
-weather {
-  width: 100%; }
-
-mainclass {
-  display: flex;
-  flex-direction: row;
-  background-color: lightslategray;
-  padding: 20px;
-  flex-wrap: wrap; }
-
-classifieds {
-  width: 33%; }
-
 footer {
   font-size: 36px;
   color: white;
   background-color: #333;
   padding: 0px 16px; }
-
-/*# sourceMappingURL=main.css.map */

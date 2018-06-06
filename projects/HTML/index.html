@@ -9,6 +9,13 @@
     <!-- compatible with previous IE -->
     <link rel="stylesheet" href="main.css" type="text/css">
     <title>Basic HTML/CSS Design</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            background-color: lightslategray;
+            padding: 20px; }
+    </style>
 </head>
 <body>
     <header>
@@ -18,31 +25,30 @@
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="weather.html">Weather</a></li>
-                <li><a href="classifieds.html">Classifieds</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article>
+        <article style="width: 66.6%; padding-right: 30px;">
             <h2>Manchester is the real tech capital of the UK</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, illum qui possimus totam consequatur ipsam tempora vel cum reiciendis ab sunt ex, provident alias sequi repellendus iste, quia ea laboriosam.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, illum qui possimus totam consequatur ipsam tempora vel cum reiciendis ab sunt ex, provident alias sequi repellendus iste, quia ea laboriosam.</p>
             <figure>
-                <img src="ManchesterDigitalCity.jpg" alt="Manchester Digital City">
+                <img style="max-width: 100%; max-height: 100%;" src="ManchesterDigitalCity.jpg" alt="Manchester Digital City">
                 <figcaption>Manchester Digital City</figcaption>
             </figure>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, illum qui possimus totam consequatur ipsam tempora vel cum reiciendis ab sunt ex, provident alias sequi repellendus iste, quia ea laboriosam.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, illum qui possimus totam consequatur ipsam tempora vel cum reiciendis ab sunt ex, provident alias sequi repellendus iste, quia ea laboriosam.</p>
         </article>
-        <aside>
+        <aside style="width: 33.3%;">
             <h3>Author</h3>
-            <img src="HomerSimpson.jpg" alt="Homer Simpson">
+            <img style="max-width: 100%; max-height: 100%;" src="HomerSimpson.jpg" alt="Homer Simpson">
             <h4>Homer Simpsons</h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, esse deserunt eos aperiam officiis architecto sint nihil? Molestias delectus modi vero inventore, sapiente dolor deleniti reiciendis eum enim, suscipit non?</p>
         </aside>
     </main>
-    <footer>
-        &copy; Manchester Morning News
+    <footer> &copy; Manchester Morning News
     </footer>
 </body>
 </html>

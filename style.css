@@ -1,17 +1,18 @@
-body{
-	font-family: sans-serif, serif;
+body {
+    font-family: sans-serif, serif;
     text-align: center;
-    min-width:600px;
+    min-width: 700px;
     width: auto !important;
-    width:600px;
-}
+    width: 700px;
+}  
 /* Default text set to Ariel with Times Roman as backup.
 Default text colour set to Dark Red matching Header Image.
 All text set to align centre. 
 Minimum width set to 600px.
 Firefox will set width as auto.
 IE6 ignores !important, set width to 600px. */
-header{
+  
+#header {
     background-image: url("img/pexels-photo-265047.jpeg");
     background-size: cover;
     background-position: center;
@@ -28,32 +29,32 @@ Background Image appear according to the flexbox model.
 Only item in Header, the Button will appear centre with border.
 Text in Header colour set to Floral White.
 Padding set to 0px 20px 0px 20px. */
-
-header h1{
+  
+#header h1 {
     font-size: 50px;
     line-height: 1.2;
-    }
+}  
 /* Header H1 text set to 50px.
 Gap between H1 text set to 1.2(unitless). */
-
-header p{
+  
+#header p {
     font-size: 20px;
+    width: 75%;
 }
 /* Header Paragraph text set to 20px. */
-
-header ul{
+  
+#header ul {
     padding-bottom: 15px;
-
 }
 /* Padding applied to unordered list. */
-
-header a{
+  
+#header a {
     color: black;
     text-decoration: black;
 }
 /* Header Link text colour set to white. */
-
-header .button{
+  
+#header .button {
     font-size: 18px;
     text-decoration: none;
     color: black;
@@ -69,52 +70,53 @@ Button Border colour set to Floral White.
 Button Padding set to 10px 20px 10px 20px.
 Rounded corner added to Button.
 Margin added to Button at 20px. */
-
-header .button:hover{
+  
+#header .button:hover {
     color: white;
     background: black;
 }
 /* Button colour change to Dark Red once pointer hoover. */
-
-course h2{
+  
+#course h2 {
     color: black;
     padding-top: 20px;
 }
-
-course img{
+  
+#course img {
     padding: 0px 10px;
     padding-bottom: 30px;
 }
-
-project h2{
+  
+project h2 {
     color: black;
     padding: 20px 16px;
 }
-
-project ul{
+  
+project ul {
     padding-bottom: 15px;
 }
 /* Padding applied to unordered list. */
-
+  
 project li {
     display: inline;
     margin-right: 40px;
     font-size: 20px;
 }
-
+  
 project li a {
     color: black;
     text-decoration: none;
     padding: 20px;
 }
+  
 project li a:hover {
     background-color: black;
     color: white;
 }
 /* Lists appears horizontal.
 Margin between each Lists. */
-
-container{
+  
+#container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-area: auto;
@@ -123,58 +125,57 @@ container{
 /* CSS Grid Layout used over Flexbox Layout.
 Layout set to two Grid Columns at 1fr.
 Rows will auto size from 50px to Browser length. */
-
-container p{
+  
+#container p {
     padding: 0px 10px;
 }
 /* Container Paragraph text padding set to 0px 10px 0px 10px. */
-
-
-links img{
+  
+#links img {
     padding: 20px;
 }
 /* Padding added to Social Icon. */
-
-links img:hover{
+  
+#links img:hover {
     opacity: 0.7;
 }
 /* Icon will fade when pointer over. */
-
-skills{
+  
+#skills {
     grid-column: 1;
     grid-row: 1/3;
 }
-
-objective{
+  
+#objective {
     grid-column: 2;
     grid-row: 1/5;
     background: black;
     color: floralwhite;
 }
-
-experience{
+  
+#experience {
     grid-column: 1;
     grid-row: 3/5;
     border-top: black 1px solid;
     border-left: black 1px solid;
     border-right: black 1px solid;
 }
-
-education{
+  
+#education {
     grid-column: 1;
     grid-row: 5/7;
     border-left: black 1px solid;
     border-right: black 1px solid;
 }
-
-other{
+  
+#other {
     grid-column: 2;
     grid-row: 5/7;
     border-top: black 1px solid;
     border-right: black 1px solid;
 }
-
-footer{
+  
+#footer {
     text-align: center;
     color: floralwhite;
     background: black;
