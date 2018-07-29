@@ -89,8 +89,7 @@ project ul {
   
 project li {
     display: inline;
-    margin-right: 40px;
-    font-size: 20px;
+    font-size: 18px;
 }
   
 project li a {
