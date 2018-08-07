@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visit Manchester</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class+"navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Visit Manchester</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="thingstodo.html">Things to do</a></li>
+                    <li class="active"><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="hotels.html">Hotels</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="carousel-restaurants" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-restaurants" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-restaurants" data-slide-to="1"></li>
+            <li data-target="#carousel-restaurants" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/iberica.jpg" alt="Iberica">
+                <div class="carousel-caption">
+                    <h3>Iberica</h3>
+                    <p>Airy space with long bar and mezzanine open kitchen, for classic and modern Spanish-Asturian dishes.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/hawksmoor.jpg" alt="Hawksmoor">
+                <div class="carousel-caption">
+                  <h3>Hawksmoor</h3>
+                  <p>'A place to blur day with night over cocktails and the country's finest meat' Time Out Manchester</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/tattu.jpg" alt="Tattu">
+                <div class="carousel-caption">
+                    <h3>Tattu</h3>
+                    <p>Modern Chinese cuisine and cocktails in sophisticated, dark wood bar/restaurant with carved screens.</p>
+                </div>
+            </div>
+        </div>
+            <a class="left carousel-control" href="#carousel-restaurants" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-restaurants" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <hr>
+    <footer>
+        <p>&copy; Visit Manchester 2018</p>
+    </footer>
+</body>
+</html>

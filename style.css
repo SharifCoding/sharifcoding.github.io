@@ -30,15 +30,15 @@ Only item in Header, the Button will appear centre with border.
 Text in Header colour set to Floral White.
 Padding set to 0px 20px 0px 20px. */
   
-#header h1 {
-    font-size: 50px;
+#header h2 {
+    font-size: 45px;
     line-height: 1.2;
 }  
 /* Header H1 text set to 50px.
 Gap between H1 text set to 1.2(unitless). */
   
 #header p {
-    font-size: 20px;
+    font-size: 18px;
     width: 75%;
 }
 /* Header Paragraph text set to 20px. */
@@ -77,9 +77,9 @@ Margin added to Button at 20px. */
 }
 /* Button colour change to Dark Red once pointer hoover. */
   
-project h2 {
+project h3 {
     color: black;
-    padding: 20px 16px;
+    padding: 10px 16px;
 }
   
 project ul {
@@ -95,7 +95,7 @@ project li {
 project li a {
     color: black;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
 }
   
 project li a:hover {
