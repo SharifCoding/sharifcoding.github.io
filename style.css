@@ -1,18 +1,11 @@
 body {
     font-family: sans-serif, serif;
     text-align: center;
-    min-width: 700px;
+    min-width: 645px;
     width: auto !important;
-    width: 700px;
 }  
-/* Default text set to Ariel with Times Roman as backup.
-Default text colour set to Dark Red matching Header Image.
-All text set to align centre. 
-Minimum width set to 600px.
-Firefox will set width as auto.
-IE6 ignores !important, set width to 600px. */
   
-#header {
+.header {
     background-image: url("img/pexels-photo-265047.jpeg");
     background-size: cover;
     background-position: center;
@@ -22,90 +15,142 @@ IE6 ignores !important, set width to 600px. */
     color: black;
     padding: 0 20px;
 }
-/* https://www.pexels.com/photo/art-artist-black-and-white-blank-265047/
-Background Image will match browser size.
-Centre focus on Background Image.
-Background Image appear according to the flexbox model.
-Only item in Header, the Button will appear centre with border.
-Text in Header colour set to Floral White.
-Padding set to 0px 20px 0px 20px. */
   
-#header h2 {
+.header h2 {
     font-size: 45px;
     line-height: 1.2;
 }  
-/* Header H1 text set to 50px.
-Gap between H1 text set to 1.2(unitless). */
   
-#header p {
+.header p {
     font-size: 18px;
     width: 75%;
 }
-/* Header Paragraph text set to 20px. */
-  
-#header ul {
+
+.header ul {
     padding-bottom: 15px;
 }
-/* Padding applied to unordered list. */
-  
-#header a {
+
+.header a {
     color: black;
     text-decoration: black;
 }
-/* Header Link text colour set to white. */
-  
-#header .button {
+
+.header .button {
     font-size: 18px;
     text-decoration: none;
     color: black;
     border: black 2px solid;
     padding: 10px 20px;
     border-radius: 10px;
-    margin: 20px
+    margin: 5px;
 }
-/* Button Text set to 18px.
-Underline removed from Text.
-Text colour set to Floral White.
-Button Border colour set to Floral White.
-Button Padding set to 10px 20px 10px 20px.
-Rounded corner added to Button.
-Margin added to Button at 20px. */
-  
-#header .button:hover {
+
+.header .button:hover {
     color: white;
     background: black;
 }
-/* Button colour change to Dark Red once pointer hoover. */
-  
-project h3 {
+
+.project h3 {
     color: black;
     padding: 10px 16px;
 }
-  
-project ul {
-    padding-bottom: 15px;
+
+/* Start of Dropdown menu */
+.cool {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-/* Padding applied to unordered list. */
-  
-project li {
-    display: inline;
-    font-size: 18px;
+
+.cool li {
+    position: relative;
+    display:flex;
+    justify-content: center;
 }
-  
-project li a {
+
+.cool li a {
     color: black;
     text-decoration: none;
-    padding: 15px;
+    font-size: 20px;
+    background: lightgrey;
+    padding:10px 20px;
+    display: inline-block;
+    margin:20px;
+    border-radius:5px;
 }
-  
-project li a:hover {
+
+.cool li a:hover {
     background-color: black;
     color: white;
 }
-/* Lists appears horizontal.
-Margin between each Lists. */
 
-#grid {
+.dropdown {
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    padding:20px;
+    top:-20px;
+    border-radius:2px;
+    transition: all 0.5s;
+    transform: translateY(100px);
+    will-change: opacity;
+    display: none;
+}
+
+.trigger-enter .dropdown {
+    display: block;
+}
+
+.trigger-enter-active .dropdown {
+    opacity: 1;
+    z-index: 1;
+    background: white;
+}
+
+.dropdownBackground {
+    width:100px;
+    height:100px;
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+    transition:all 0.3s, opacity 0.1s, transform 0.2s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity:0;
+}
+
+.dropdownBackground.open {
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    width:20px;
+    height:20px;
+    display: block;
+    background: lightgrey;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.projects {
+    min-width:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+
+.projects img {
+    float:left;
+    margin-right:20px;
+}
+/* End of Dropdown menu */
+
+.grid {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -113,54 +158,49 @@ Margin between each Lists. */
     lightgrey);
 }
 
-#gridleft {
+.gridleft {
     width: 66.6%;
     padding: 0px 30px;
 }
 
-#gridright {
+.gridright {
     width: 33.3%;
     padding: 0px 30px;
 }
 
-#gridright ul img {
+.gridright ul img {
     padding-bottom: 20px;
 }
 
-#container {
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-area: auto;
     grid-auto-rows: minmax(50px, auto);
 }
-/* CSS Grid Layout used over Flexbox Layout.
-Layout set to two Grid Columns at 1fr.
-Rows will auto size from 50px to Browser length. */
   
-#container p {
+.container p {
     padding: 0px 10px;
 }
-/* Container Paragraph text padding set to 0px 10px 0px 10px. */
   
-#links img {
+.links img {
     padding: 20px;
 }
-/* Padding added to Social Icon. */
   
-#links img:hover {
+.links img:hover {
     opacity: 0.7;
 }
-/* Icon will fade when pointer over. */
   
-#objective {
+.objective {
     grid-column: 2;
     grid-row: 1/4;
     background: black;
     color: floralwhite;
     padding: 0px 30px;
+    font-weight: 100;
 }
   
-#experience {
+.experience {
     grid-column: 1;
     grid-row: 1/3;
     border-top: black 1px solid;
@@ -169,7 +209,7 @@ Rows will auto size from 50px to Browser length. */
     padding: 0px 30px;
 }
   
-#education {
+.education {
     grid-column: 1;
     grid-row: 3/6;
     border-left: black 1px solid;
@@ -177,7 +217,7 @@ Rows will auto size from 50px to Browser length. */
     padding: 0px 30px;
 }
   
-#other {
+.other {
     grid-column: 2;
     grid-row: 4/6;
     border-top: black 1px solid;
@@ -185,7 +225,7 @@ Rows will auto size from 50px to Browser length. */
     padding: 0px 30px;
 }
   
-#footer {
+.footer {
     text-align: center;
     color: floralwhite;
     background: black;

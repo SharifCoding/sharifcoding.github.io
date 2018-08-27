@@ -6,5 +6,6 @@
 - CSS
 - Grid Layout
 - Flexbox Layout
+- Dropdown with JS
 
 #### Load my [GitHub Page](https://sharifcoding.github.io/)
