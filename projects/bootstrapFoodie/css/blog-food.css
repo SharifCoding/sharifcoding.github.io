@@ -1,0 +1,9 @@
+body {
+  padding-top: 56px;
+}
+
+#center-cropped {
+  object-fit: none;
+  object-position: center;
+  height: 300px;
+}
