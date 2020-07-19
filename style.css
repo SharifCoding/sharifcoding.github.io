@@ -55,6 +55,27 @@ body {
 	padding-right: 10px;
 }
 
+.grid {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-image: -webkit-linear-gradient(white,lightgrey);
+}
+
+.gridleft {
+	width: 60%;
+	padding: 0px 30px;
+}
+
+.gridright {
+	width: 40%;
+	padding: 0px 30px;
+}
+
+.gridright ul img {
+	padding-top: 20px;
+}
+
 /* Start of Dropdown menu */
 .cool {
 	list-style: none;
@@ -148,27 +169,6 @@ body {
 	margin-right:20px;
 }
 /* End of Dropdown menu */
-
-.grid {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	background-image: -webkit-linear-gradient(white,lightgrey);
-}
-
-.gridleft {
-	width: 60%;
-	padding: 0px 30px;
-}
-
-.gridright {
-	width: 40%;
-	padding: 0px 30px;
-}
-
-.gridright ul img {
-	padding-top: 20px;
-}
 
 .container {
 	display: grid;
