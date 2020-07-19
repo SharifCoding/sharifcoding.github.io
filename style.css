@@ -1,226 +1,224 @@
 body {
-    font-family: sans-serif, serif;
-    text-align: center;
-    min-width: 645px;
-    width: auto !important;
+	font-family: sans-serif, serif;
+	text-align: center;
+	min-width: 645px;
+	width: auto !important;
 }  
   
 .header {
-    background-image: url("img/pexels-photo-265047.jpeg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
+	background-image: url("img/pexels-photo-265047.jpeg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: black;
 }
   
 .header h2 {
-    font-size: 45px;
-    line-height: 1.2;
+	font-size: 45px;
+	line-height: 1.2;
 }  
   
 .header p {
-    font-size: 18px;
-    width: 75%;
-    padding: 0 20px;
+	font-size: 18px;
+	width: 75%;
+	padding: 0 20px;
 }
 
 .header ul {
-    padding: 15px 0px;
+	padding: 15px 0px;
 }
 
 .header a {
-    color: black;
-    text-decoration: black;
+	color: black;
+	text-decoration: black;
 }
 
 .header .button {
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    border: black 2px solid;
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin: 10px;
+	font-size: 18px;
+	text-decoration: none;
+	color: black;
+	border: black 2px solid;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin: 10px;
 }
 
 .header .button:hover {
-    color: white;
-    background: black;
+	color: white;
+	background: black;
 }
 
-.project h3 {
-    color: black;
-    padding-top: 5px;
+.icons img {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* Start of Dropdown menu */
 .cool {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
 }
 
 .cool li {
-    position: relative;
-    display:flex;
-    justify-content: center;
+	position: relative;
+	display:flex;
+	justify-content: center;
 }
 
 .cool li a {
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    background: lightgrey;
-    padding:10px 20px;
-    display: inline-block;
-    margin:20px;
-    border-radius:5px;
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	background: lightgrey;
+	padding:10px 20px;
+	display: inline-block;
+	margin:18px;
+	border-radius:5px;
 }
 
 .cool li a:hover {
-    background-color: black;
-    color: white;
+	background-color: black;
+	color: white;
 }
 
 .dropdown {
-    opacity: 0;
-    position: absolute;
-    overflow: hidden;
-    padding:20px;
-    top:-20px;
-    border-radius:2px;
-    transition: all 0.5s;
-    transform: translateY(100px);
-    will-change: opacity;
-    display: none;
+	opacity: 0;
+	position: absolute;
+	overflow: hidden;
+	padding:20px;
+	top:-20px;
+	border-radius:2px;
+	transition: all 0.5s;
+	transform: translateY(100px);
+	will-change: opacity;
+	display: none;
 }
 
 .trigger-enter .dropdown {
-    display: block;
+	display: block;
 }
 
 .trigger-enter-active .dropdown {
-    opacity: 1;
-    z-index: 1;
-    background: white;
+	opacity: 1;
+	z-index: 1;
+	background: white;
 }
 
 .dropdownBackground {
-    width:100px;
-    height:100px;
-    position: absolute;
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
-    transition:all 0.3s, opacity 0.1s, transform 0.2s;
-    transform-origin: 50% 0;
-    display: flex;
-    justify-content: center;
-    opacity:0;
+	width:100px;
+	height:100px;
+	position: absolute;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+	transition:all 0.3s, opacity 0.1s, transform 0.2s;
+	transform-origin: 50% 0;
+	display: flex;
+	justify-content: center;
+	opacity:0;
 }
 
 .dropdownBackground.open {
-    opacity: 1;
+	opacity: 1;
 }
 
 .arrow {
-    position: absolute;
-    width:20px;
-    height:20px;
-    display: block;
-    background: lightgrey;
-    transform: translateY(-50%) rotate(45deg);
+	position: absolute;
+	width:20px;
+	height:20px;
+	display: block;
+	background: lightgrey;
+	transform: translateY(-50%) rotate(45deg);
 }
 
 .projects {
-    min-width:400px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.7;
+	min-width:400px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.7;
 }
 
 .projects img {
-    float:left;
-    margin-right:20px;
+	float:left;
+	margin-right:20px;
 }
 /* End of Dropdown menu */
 
 .grid {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-image: -webkit-linear-gradient(white,
-    lightgrey);
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background-image: -webkit-linear-gradient(white,lightgrey);
 }
 
 .gridleft {
-    width: 66.6%;
-    padding: 0px 30px;
+	width: 60%;
+	padding: 0px 30px;
 }
 
 .gridright {
-    width: 33.3%;
-    padding: 0px 30px;
+	width: 40%;
+	padding: 0px 30px;
 }
 
 .gridright ul img {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-area: auto;
-    grid-auto-rows: minmax(50px, auto);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-area: auto;
+	grid-auto-rows: minmax(50px, auto);
 }
   
 .container p {
-    padding: 0px 10px;
+	padding: 0px 10px;
 }
   
 .objective {
-    grid-column: 2;
-    grid-row: 1/4;
-    background: black;
-    color: floralwhite;
-    padding: 0px 30px;
-    font-weight: 100;
+	grid-column: 2;
+	grid-row: 1/4;
+	background: black;
+	color: floralwhite;
+	padding: 0px 30px;
+	font-weight: 100;
 }
   
 .experience {
-    grid-column: 1;
-    grid-row: 1/3;
-    border-top: black 1px solid;
-    border-left: black 1px solid;
-    border-right: black 1px solid;
-    padding: 0px 30px;
+	grid-column: 1;
+	grid-row: 1/3;
+	border-top: black 1px solid;
+	border-left: black 1px solid;
+	border-right: black 1px solid;
+	padding: 0px 30px;
 }
   
 .education {
-    grid-column: 1;
-    grid-row: 3/6;
-    border-left: black 1px solid;
-    border-right: black 1px solid;
-    padding: 0px 30px;
+	grid-column: 1;
+	grid-row: 3/6;
+	border-left: black 1px solid;
+	border-right: black 1px solid;
+	padding: 0px 30px;
 }
   
 .other {
-    grid-column: 2;
-    grid-row: 4/6;
-    border-top: black 1px solid;
-    border-right: black 1px solid;
-    padding: 0px 30px;
+	grid-column: 2;
+	grid-row: 4/6;
+	border-top: black 1px solid;
+	border-right: black 1px solid;
+	padding: 0px 30px;
 }
   
 .footer {
-    text-align: center;
-    color: floralwhite;
-    background: black;
-    border: black 1px solid;
-    padding: 10px;
+	text-align: center;
+	color: floralwhite;
+	background: black;
+	border: black 1px solid;
+	padding: 10px;
 }
